@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Task</h1>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="task_title" class="form-label">Task Title</label>
+                <input type="text" class="form-control" id="task_title" name="task_title" required>
+            </div>
+            <div class="mb-3">
+                <label for="task_description" class="form-label">Task Description</label>
+                <textarea class="form-control" id="task_description" name="task_description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="task_assignee" class="form-label">Assignee</label>
+                <input type="text" class="form-control" id="task_assignee" name="task_assignee" required>
+            </div>
+            <div class="mb-3">
+                <label for="task_status" class="form-label">Status</label>
+                <select class="form-select" id="task_status" name="task_status" required>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Task</button>
+        </form>
+    </div>
+</body>
+</html>
